@@ -181,6 +181,6 @@
 
 **⚠️ Disclaimer**: Este projeto é apenas para fins educacionais. O uso de macOS em hardware não-Apple pode violar os termos de serviço da Apple. Use por sua própria conta e risco.
 
-**📅 Última Atualização**: $(date +"%B %Y")
+**📅 Última Atualização**: Outubro 2025
 **🔧 Versão OpenCore**: 1.0.6
 **💻 Hardware**: Aorus Z790 Elite AX + RX 6900 XT + i9-13900K
