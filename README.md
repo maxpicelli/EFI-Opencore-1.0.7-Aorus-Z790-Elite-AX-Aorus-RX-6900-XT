@@ -1,4 +1,4 @@
-# EFI OpenCore 1.0.6 - Aorus Z790 Elite AX + RX 6900 XT
+# EFI OpenCore 1.0.7 - Aorus Z790 Elite AX + RX 6900 XT
 
 ## 📋 Especificações do Hardware
 
