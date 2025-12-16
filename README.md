@@ -204,13 +204,6 @@ Esta EFI inclui vários patches ACPI para corrigir incompatibilidades e melhorar
 - Correções de USB e Power Management
 - Adicionados novos kexts de monitoramento
 
-### **v1.0.6**
-- Atualização para OpenCore 1.0.6
-- Melhorias na compatibilidade com Sequoia
-- Otimizações para RX 6900 XT
-- Correções de USB e Power Management
-- Adicionados novos kexts de monitoramento
-
 ---
 
 **⚠️ Disclaimer**: Este projeto é apenas para fins educacionais. O uso de macOS em hardware não-Apple pode violar os termos de serviço da Apple. Use por sua própria conta e risco.
