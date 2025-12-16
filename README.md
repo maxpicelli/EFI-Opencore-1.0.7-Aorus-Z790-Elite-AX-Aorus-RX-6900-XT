@@ -41,6 +41,7 @@
 ## 🚀 **Compatibilidade macOS**
 
 ### ✅ **Versões Suportadas**
+- **macOS Tahoe** (26.2)
 - **macOS Sequoia** (15.x)
 - **macOS Sonoma** (14.x)
 - **macOS Ventura** (13.x)
@@ -106,6 +107,31 @@
 - **DMAR.aml** - DMA Remapping
 - **ssdt_data.aml** - Dados SSDT
 
+## 🔧 **Patches**
+
+### 📝 **ACPI Patches**
+Esta EFI inclui vários patches ACPI para corrigir incompatibilidades e melhorar a compatibilidade:
+
+- **Rename XHCI to XHC_** - Renomeia controlador USB XHCI
+- **RTC._STA Rename** - Corrige status do RTC
+- **core/thread count = 24 for 8P+8E Core i9** - Ajusta contagem de cores/threads para i9-13900K
+- **TIMR IRQ 0** - Corrige interrupção do timer
+- **IPIC IRQ 2** - Corrige interrupção do controlador de interrupção
+- **RTC IRQ 8** - Corrige interrupção do RTC
+- **GPRW to XPRW** - Renomeia método GPRW para evitar conflitos de wake
+- **Name6D-03 to 00** - Correção de nomeação ACPI
+- **Name6D-04 to 00** - Correção de nomeação ACPI
+- **ADBG to XDBG** - Renomeia método de debug
+- **_WAK to ZWAK** - Renomeia método de wake (2 variações)
+- **_PTS to ZPTS** - Renomeia método de preparação para sleep (2 variações)
+
+### 🎯 **Kernel Patches**
+- **FileVault Disable** - Desabilita o FileVault via patch no kernel APFS
+  - **Localização**: `Kernel → Patch → _apfs_filevault_allowed`
+  - **Identificador**: `com.apple.filesystems.apfs`
+  - **Versões suportadas**: macOS 12.0.0 até 25.99.99
+  - **Importante**: FileVault está desabilitado intencionalmente para evitar problemas de compatibilidade em Hackintosh
+
 ## 🎨 **Recursos OpenCore**
 
 ### 🖼️ **Temas Incluídos**
@@ -170,6 +196,14 @@
 
 ## 📝 **Changelog**
 
+### **v1.0.7**
+- Atualização para OpenCore 1.0.7
+- FileVault desabilitado via patch do kernel
+- Melhorias na compatibilidade com Sequoia
+- Otimizações para RX 6900 XT
+- Correções de USB e Power Management
+- Adicionados novos kexts de monitoramento
+
 ### **v1.0.6**
 - Atualização para OpenCore 1.0.6
 - Melhorias na compatibilidade com Sequoia
@@ -181,6 +215,6 @@
 
 **⚠️ Disclaimer**: Este projeto é apenas para fins educacionais. O uso de macOS em hardware não-Apple pode violar os termos de serviço da Apple. Use por sua própria conta e risco.
 
-**📅 Última Atualização**: Outubro 2025
-**🔧 Versão OpenCore**: 1.0.6
+**📅 Última Atualização**: Outubro 2025  
+**🔧 Versão OpenCore**: 1.0.7  
 **💻 Hardware**: Aorus Z790 Elite AX + RX 6900 XT + i9-13900K
